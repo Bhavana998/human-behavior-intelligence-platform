@@ -1,0 +1,21 @@
+text,sentiment,sentiment_score,emotion,emotion_score,toxicity,toxicity_score,urgency,urgency_score
+I love this product! It's amazing.,POSITIVE,0.4,,0,,0,,0
+This is the worst experience ever. I want a refund.,NEGATIVE,0.2,,0,,0,,0
+I'm really worried about the future.,NEUTRAL,0.5,,0,,0,,0
+You are stupid and useless.,NEUTRAL,0.5,,0,,0,,0
+I'm so happy and grateful for everything.,POSITIVE,0.2,,0,,0,,0
+The customer service was terrible and slow.,NEGATIVE,0.2,,0,,0,,0
+"I need help right now, it's urgent!",NEUTRAL,0.5,,0,,0,,0
+"I'm excited about the new job, but nervous about moving.",NEUTRAL,0.5,,0,,0,,0
+This is the best day of my life!,POSITIVE,0.2,,0,,0,,0
+"I hate this company, they are liars.",NEGATIVE,0.2,,0,,0,,0
+I feel sad and lonely today.,NEGATIVE,0.2,,0,,0,,0
+Can you please help me with this issue?,NEUTRAL,0.5,,0,,0,,0
+You are a complete failure.,NEUTRAL,0.5,,0,,0,,0
+I'm so in love with this new phone!,POSITIVE,0.2,,0,,0,,0
+The project is delayed again. This is critical.,NEUTRAL,0.5,,0,,0,,0
+I'm not sure if I should buy this product.,NEUTRAL,0.5,,0,,0,,0
+Thank you for your excellent support!,POSITIVE,0.2,,0,,0,,0
+I'm afraid I won't make it on time.,NEUTRAL,0.5,,0,,0,,0
+"This is garbage, I want my money back.",NEUTRAL,0.5,,0,,0,,0
+I'm so happy to see you again!,POSITIVE,0.2,,0,,0,,0
