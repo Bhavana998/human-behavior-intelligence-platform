@@ -56,7 +56,128 @@ Built using **Clean Architecture**, **SOLID Principles**, and the **Repository P
 
 # 🏗️ Architecture
 
+```mermaid
+flowchart LR
 
+%% ===========================
+%% Client Layer
+%% ===========================
+User([👤 User])
+
+%% ===========================
+%% Frontend
+%% ===========================
+subgraph Frontend
+    Streamlit["🖥️ Streamlit Dashboard"]
+end
+
+%% ===========================
+%% Backend
+%% ===========================
+subgraph Backend["⚡ FastAPI Backend"]
+
+    Router["API Routers"]
+
+    Auth["Authentication Service
+(JWT + OAuth2)"]
+
+    Predict["Prediction Service"]
+
+    Batch["Batch Processing"]
+
+    Reports["Report Generator"]
+
+end
+
+%% ===========================
+%% AI Layer
+%% ===========================
+subgraph AI["🤖 AI Inference"]
+
+    Sentiment["Sentiment Model"]
+
+    Emotion["Emotion Model"]
+
+    Toxicity["Toxicity Model"]
+
+    Urgency["Urgency Model"]
+
+    Explain["Explainability
+(SHAP / LIME)"]
+
+end
+
+%% ===========================
+%% Data Layer
+%% ===========================
+subgraph Database
+
+    PostgreSQL[(PostgreSQL / SQLite)]
+
+end
+
+%% ===========================
+%% Background Services
+%% ===========================
+subgraph Background
+
+    Celery["Celery Worker"]
+
+    Redis[(Redis)]
+
+end
+
+%% ===========================
+%% MLOps
+%% ===========================
+subgraph MLOps
+
+    Training["Model Training"]
+
+    MLflow["MLflow Tracking"]
+
+    Registry["Model Registry"]
+
+end
+
+%% ===========================
+%% Connections
+%% ===========================
+
+User --> Streamlit
+
+Streamlit --> Router
+
+Router --> Auth
+Router --> Predict
+Router --> Batch
+Router --> Reports
+
+Auth --> PostgreSQL
+
+Predict --> Sentiment
+Predict --> Emotion
+Predict --> Toxicity
+Predict --> Urgency
+Predict --> Explain
+
+Predict --> PostgreSQL
+
+Batch --> Celery
+
+Celery --> Redis
+
+Reports --> PostgreSQL
+
+Training --> MLflow
+
+MLflow --> Registry
+
+Registry --> Sentiment
+Registry --> Emotion
+Registry --> Toxicity
+Registry --> Urgency
+```
     
 
 ---
