@@ -339,17 +339,10 @@ The dashboard enables users to analyze text, visualize AI predictions, and monit
 
 Single-text behavior analysis showing sentiment, emotion, toxicity, and urgency predictions.
 
-![Prediction Result](output/prediction(1).png)
+![Prediction Result](output/prediction(2).png)
 
 ---
 
-## 📈 Detailed Prediction
-
-Detailed prediction view with confidence scores and explainable AI insights.
-
-![Detailed Prediction](output/prediction(2).png)
-
----
 
 ## 📉 Confidence Score Visualization
 
