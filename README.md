@@ -1,5 +1,5 @@
 <p align="center">
-<img src="outputs/banner.png" alt="Human Behavior Intelligence Platform Banner" width="100%">
+<img src="output/banner.png" alt="Human Behavior Intelligence Platform Banner" width="100%">
 </p>
 
 <h1 align="center">🧠 Human Behavior Intelligence Platform</h1>
