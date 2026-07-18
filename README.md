@@ -178,7 +178,43 @@ Registry --> Emotion
 Registry --> Toxicity
 Registry --> Urgency
 ```
-    
+## 🔄 Workflow
+
+```mermaid
+flowchart LR
+
+A[👤 User] --> B[🖥️ Streamlit Dashboard]
+
+B --> C[⚡ FastAPI Backend]
+
+C --> D{Authentication}
+
+D -->|Login/Register| E[(PostgreSQL)]
+
+D -->|Authenticated| F[Prediction Service]
+
+F --> G[🤗 Hugging Face Models]
+
+G --> G1[😊 Sentiment]
+G --> G2[❤️ Emotion]
+G --> G3[☣️ Toxicity]
+G --> G4[🚨 Urgency]
+
+G1 --> H[Results]
+G2 --> H
+G3 --> H
+G4 --> H
+
+H --> I[💡 Explainability]
+
+I --> J[📊 Dashboard Visualizations]
+
+J --> K[📄 PDF / CSV Report]
+
+K --> L[(Prediction History)]
+
+L --> E
+```
 
 ---
 
